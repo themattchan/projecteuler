@@ -2,6 +2,4 @@
 
 from math import factorial
 
-number = str(factorial(100))
-number_list = [int(x) for x in number]
-print sum(number_list)
+print sum([int(x) for x in str(factorial(100))])
