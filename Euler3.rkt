@@ -1,5 +1,5 @@
 #lang racket
-#cheat
+;;cheat
 (require math) 
 
 (factorize 600851475143)
