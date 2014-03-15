@@ -1,4 +1,6 @@
 racketeuler
 ===========
 
-My attempts to solve Project Euler problems in Racket.
+My attempts to solve Project Euler problems, in Python and Racket.
+
+Category: problems
