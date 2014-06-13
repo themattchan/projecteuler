@@ -1,0 +1,5 @@
+import Data.Numbers.Primes (primeFactors)
+
+triangles = map (\x →sum [1..x] ) [1..]
+factors = map (\x → (+2) $ length $ (primeFactors x)) triangles
+main =  print (head (filter (> 500) factors))
