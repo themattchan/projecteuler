@@ -2,15 +2,8 @@
 
 from operator import mul
 
-greatest_p = 0
 big_number = open("euler08.txt")
 numlist = [int(num) for num in big_number.read() if num!='\n']
+products = [reduce(mul, numlist[i-13:i]) for i in range(13, len(numlist))]
 
-for i in range(5, len(numlist)):
-    product = reduce(mul, numlist[i-5:i])
-    if product > greatest_p:
-        greatest_p = product
-
-print greatest_p
-                     
-                
+print sorted(products,reverse=True)[0]
