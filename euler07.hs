@@ -1,5 +1,3 @@
 import Data.Numbers.Primes
 
-p = (!! 10000) . primes
-
-main = print p
+euler07 = (!! 10000) . primes

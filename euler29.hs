@@ -1,9 +1,7 @@
 import Data.List (nub)
 
-as = [2..100]
-bs = [2..100]
-terms = [a^b | a <- as, b <- bs]
+xs = [2..100]
+terms = [a^b | a <- xs, b <- xs]
 
-len = length $ nub $ terms
-
-main = print len
+-- nub removes duplicates
+euler29 = length $ nub $ terms

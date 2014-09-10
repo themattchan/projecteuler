@@ -1,10 +1,8 @@
 import Data.Char
 
-sum5thpow n = n == splitsum n
+sum5thPow n = n == splitSum n
   where
-    splitsum n = sum $ map ((^5) . toInteger . digitToInt) (show n)
+    splitSum n = sum $ map ((^5) . toInteger . digitToInt) (show n)
 
 -- try some large number
-res = sum $ filter sum5thpow [2..1000000]
-
-main = print res
+euler30 = sum $ filter sum5thPow [2..1000000]

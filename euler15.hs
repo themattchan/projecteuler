@@ -7,4 +7,4 @@ import Data.Char (digitToInt)
 fac40 = product [1..40]
 fac20 = product [1..20]
 
-main = print (fac40 `div` (fac20 * fac20))
+euler15  = fac40 `div` (fac20 * fac20)

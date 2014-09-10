@@ -11,4 +11,4 @@ isPalindrome number = let digits = toList number in
     toList 0 = []
     toList n =  toList (n `div` 10) ++ [n `mod` 10 ]
 
-main = print (head $ reverse $ sort $ filter isPalindrome three_products)
+euler04 = head $ reverse $ sort $ filter isPalindrome three_products

@@ -8,5 +8,4 @@ from http://mathschallenge.net/library/number/number_of_divisors
 then the number of divisors, d(n) = (a+1)(b+1)(c+1)..."
 -}
 divisors n = product $ map ((+1) . length) (group (primeFactors n))
-res = head $ filter ((> 500) . divisors) triangles
-main = print res
+euler12 = head $ filter ((> 500) . divisors) triangles
