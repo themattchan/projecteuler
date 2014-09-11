@@ -1,6 +1,6 @@
 import Data.List
 euler43 = sum [num' |
-			   num <- permutations ['0' .. '9'],
+               num <- permutations ['0' .. '9'],
                let num' = read num,
                let sub3 start = read $ take 3 $ drop (start-1) num,
                mod (sub3 2) 2 == 0,
