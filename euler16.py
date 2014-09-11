@@ -1,3 +1,2 @@
-num = 2**1000
-num = [int(x) for x in str(num)]
-print sum(num)
+num = sum([int(x) for x in str(2**1000)])
+print num

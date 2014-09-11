@@ -57,7 +57,7 @@ maxPath (x:y:zs) =  maxPath $ (reduceTri (removeMin x)  y) : zs
 soln = maxPath $ reverse tri
 
 -- from haskell wiki, a more unreadable implementation of the same algorithm
--- foldr1 starts from the end
+-- foldr1 starts from the end, using the last element as the accumulator
 problem_18 = head $ foldr1 g tri
   where
     f x y z = x + max y z
