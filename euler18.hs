@@ -1,4 +1,5 @@
 module Euler18 (maxPath) where
+
 tri = [
     [75],
     [95, 64],
@@ -47,12 +48,12 @@ reduced to a list [[x]], where x is the max path.
 -}
 
 maxPath :: [[Int]] -> Int
-maxPath [[x]] = x
-maxPath (x:y:zs) =  maxPath $ (reduceTri (removeMin x)  y) : zs
-	where
-	  -- returns a list with length (length ys) -1
-	  removeMin ys  = zipWith max ys (tail ys)
-	  reduceTri x y = zipWith (+) x y
+maxPath [[x]]    = x
+maxPath (x:y:zs) =  maxPath $ reduceTri (removeMin x)  y : zs
+    where
+      -- returns a list with length (length ys) -1
+      removeMin ys  = zipWith max ys (tail ys)
+      reduceTri     = zipWith (+)
 
 soln = maxPath $ reverse tri
 
