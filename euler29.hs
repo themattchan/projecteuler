@@ -1,7 +1,5 @@
-import Data.List (nub)
+import Data.List
+import Data.Set as Set
 
-xs = [2..100]
-terms = [a^b | a <- xs, b <- xs]
-
--- nub removes duplicates
-euler29 = length $ nub $ terms
+euler29 = Set.size . Set.fromAscList . sort $ terms
+  where terms = [a^b | a<-[2..100], b<-[2..100]]
