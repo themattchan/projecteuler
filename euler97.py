@@ -1,6 +1,6 @@
 import time
 
-#exponentiation by squaring
+# exponentiation by squaring
 def exponent(n,p):
     if p < 0:
         return exponent(1/n, -p)
