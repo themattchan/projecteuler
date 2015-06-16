@@ -1,4 +1,4 @@
-projecteuler 
+projecteuler
 ===========
 
-My solutions to Project Euler problems. Functionally, in Haskell and Scheme.
+My Project Euler :: Haskell is Magic.
