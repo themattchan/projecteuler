@@ -17,4 +17,4 @@ revCands   = [maxB, maxB-1..minB]
 fitsTemplate :: Int -> Bool
 fitsTemplate = ("123456789" ==) . map head . chunksOf 2 . show . (^2)
 
-euler206 = head $ dropWhile (not . fitsTemplate) revCands
+euler206 = (*10) . head $ dropWhile (not . fitsTemplate) revCands
